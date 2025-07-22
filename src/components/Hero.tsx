@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import ISTClock from "./ISTClock";
 
 const Hero = () => {
   return (
@@ -78,6 +79,9 @@ const Hero = () => {
               <div className="absolute bottom-8 left-8 bg-card/90 backdrop-blur-sm rounded-lg p-4 shadow-medium animate-float" style={{animationDelay: '2s'}}>
                 <div className="text-sm font-semibold text-medical-green">Safe Foods</div>
                 <div className="text-xs text-muted-foreground">Personalized suggestions</div>
+              </div>
+              <div className="absolute top-8 left-8 animate-float" style={{animationDelay: '4s'}}>
+                <ISTClock />
               </div>
             </div>
           </div>
